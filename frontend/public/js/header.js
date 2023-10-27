@@ -18,3 +18,17 @@ home.addEventListener("click",function(){
     
 })
 
+about.addEventListener("click",function(){
+    window.location.href = "/about"
+    
+})
+
+chats.addEventListener("click",function(){
+    window.location.href = "/chat"
+    
+})
+
+profile.addEventListener("click",function(){
+    window.location.href = "/profile"
+
+})

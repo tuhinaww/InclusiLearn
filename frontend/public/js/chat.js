@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         messageForm.value = "";
       }
     });
-  
+     // Handle receiving messages
+     socket.on("chat message", (message) => {
+      const messageElement = document.createElement("div");
+      messageElement.textContent = message;
+      messageList.appendChild(messageElement);
+    });  
 
 
   });

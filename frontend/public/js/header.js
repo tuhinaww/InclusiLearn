@@ -9,3 +9,12 @@ logo.addEventListener("click",function(){
     window.location.href = "/homepage"
 })
 
+search_header.addEventListener("click",function(){
+    window.location.href = "/search"
+})
+
+home.addEventListener("click",function(){
+    window.location.href = "/homepage"
+    
+})
+

@@ -17,6 +17,11 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
+app.use(express.static('public'));
+
+app.set('views', './views');
+app.set('view engine', 'ejs');
+
 // Navigation
 
 app.get('/', (req, res) => {

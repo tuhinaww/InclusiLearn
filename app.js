@@ -45,6 +45,9 @@ app.use('/', loginRoutes);
 const registrationRoutes = require('./routes/registrationRoutes'); 
 app.use('/', registrationRoutes); 
 
+const uploadRoutes = require('./routes/uploadPostRoutes');
+app.use('/', isLoggedIn, uploadRoutes);
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 })

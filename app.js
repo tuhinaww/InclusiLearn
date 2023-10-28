@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 
-const port = 5000;
 const mongoose = require('mongoose');
 require('dotenv').config();
 
@@ -27,6 +26,6 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.send('welcome');
 })
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${port}`);
 })

@@ -30,6 +30,9 @@ app.get('/', (req, res) => {
     res.send('welcome');
 })
 
+const registrationRoutes = require('./routes/registrationRoutes'); 
+app.use('/', registrationRoutes); 
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 })

@@ -33,6 +33,8 @@ app.use(express.static('public'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
+const isLoggedIn = require('./middlewares/isLoggedIn');
+
 // Navigation
 
 app.get('/', (req, res) => {

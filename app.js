@@ -30,6 +30,9 @@ app.get('/', (req, res) => {
     res.send('welcome');
 })
 
+const loginRoutes = require('./routes/loginRoutes');
+app.use('/', loginRoutes);
+
 const registrationRoutes = require('./routes/registrationRoutes'); 
 app.use('/', registrationRoutes); 
 

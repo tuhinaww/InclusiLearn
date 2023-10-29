@@ -64,6 +64,9 @@ app.use('/', registrationRoutes);
 const uploadRoutes = require('./routes/uploadPostRoutes');
 app.use('/', isLoggedIn, uploadRoutes);
 
+const chatRoutes = require('./routes/chatRoutes');
+app.use('/', isLoggedIn, chatRoutes);
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 })

@@ -5,6 +5,7 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 
+const socketIo = require('socket.io');
 const io = socketIo(server);
 
 io.on('connection', (socket) => {

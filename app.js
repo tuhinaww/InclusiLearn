@@ -83,6 +83,9 @@ app.use("/", isLoggedIn, messageListRoutes);
 const profileRoutes = require("./routes/profileRoutes");
 app.use("/", isLoggedIn, profileRoutes);
 
+const myPostRoutes = require('./routes/myPostRoutes');
+app.use('/', isLoggedIn, myPostRoutes);
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });

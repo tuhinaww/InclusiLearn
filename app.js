@@ -71,6 +71,12 @@ app.use("/", isLoggedIn, chatRoutes);
 const searchRoutes = require("./routes/searchRoutes");
 app.use("/", isLoggedIn, searchRoutes);
 
+const aboutRoutes = require("./routes/aboutRoutes");
+app.use("/", isLoggedIn, aboutRoutes);
+
+const homepageRoutes = require("./routes/homepageRoutes");
+app.use("/", isLoggedIn, homepageRoutes);
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });

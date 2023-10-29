@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #6B69E2, #A45AFF);
+  background: linear-gradient(to right, #6b69e2, #a45aff);
 }
 
 .form {
@@ -26,7 +26,7 @@ body {
 }
 
 .heading {
-  color: #6B69E2;
+  color: #6b69e2;
   font-weight: 600;
   font-size: 28px;
   text-align: center;
@@ -34,14 +34,14 @@ body {
 }
 
 label {
-  color: #6B69E2;
+  color: #6b69e2;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 textarea {
-  border: solid 2px #6B69E2;
+  border: solid 2px #6b69e2;
   border-radius: 15px;
   width: 100%;
   padding: 15px;
@@ -54,7 +54,7 @@ textarea {
 
 .uploaded {
   color: #fff;
-  background-color: #6B69E2;
+  background-color: #6b69e2;
   font-weight: 600;
   font-size: 18px;
   margin-top: 20px;
@@ -62,15 +62,16 @@ textarea {
   border-radius: 15px;
   cursor: pointer;
   display: inline-block;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .uploaded:hover {
   background-color: #fff;
-  color: #6B69E2;
-  border: 1px solid #6B69E2;
+  color: #6b69e2;
+  border: 1px solid #6b69e2;
 }
-
 
 #uploaded {
   display: none;
@@ -82,19 +83,20 @@ textarea {
 }
 
 .submit input[type="submit"] {
-  background-color: #6B69E2;
+  background-color: #6b69e2;
   color: #fff;
   padding: 10px 20px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
-
 
 .submit input[type="submit"]:hover {
   background-color: #fff;
-  color: #6B69E2;
-  border: 1px solid #6B69E2;
+  color: #6b69e2;
+  border: 1px solid #6b69e2;
 }

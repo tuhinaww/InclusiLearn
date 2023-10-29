@@ -1,4 +1,4 @@
-const AWS = require('aws-sdk');
+const AWS = require("aws-sdk");
 const config = new AWS.Config({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
@@ -11,7 +11,7 @@ AWS.config.getCredentials(function (err) {
   if (err) {
     console.log(err);
   } else {
-    console.log('Connected to AWS successfully');
+    console.log("Connected to AWS successfully");
   }
 });
 

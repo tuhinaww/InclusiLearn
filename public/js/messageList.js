@@ -1,46 +1,47 @@
 async function getList() {
-    let data = await axios.post("http://localhost:5000/messageList");
-    data = data.data.data;
+  let data = await axios.post("http://localhost:5000/messageList");
+  data = data.data.data;
 
-    let ul = document.createElement("ul");
-    ul.classList.add("people");
+  let ul = document.createElement("ul");
+  ul.classList.add("people");
 
-    for (let i = 0; i < data.length; i++) {
-        let li = document.createElement("li");
-        li.classList.add("person");
+  for (let i = 0; i < data.length; i++) {
+    let li = document.createElement("li");
+    li.classList.add("person");
 
-        let upper = document.createElement("div");
-        upper.classList.add("upper");
+    let upper = document.createElement("div");
+    upper.classList.add("upper");
 
-        let span1 = document.createElement("span");
-        span1.classList.add("title");
-        span1.innerHTML = data[i].name;
+    let span1 = document.createElement("span");
+    span1.classList.add("title");
+    span1.innerHTML = data[i].name;
 
-        let down = document.createElement("div");
-        down.classList.add("down");
+    let down = document.createElement("div");
+    down.classList.add("down");
 
-        let span = document.createElement("span");
-        span.classList.add("preview");
-        if(data[i].mess.mess)
-        span.innerHTML = data[i].mess.mess;
+    let span = document.createElement("span");
+    span.classList.add("preview");
+    if (data[i].mess.mess) span.innerHTML = data[i].mess.mess;
 
-        upper.appendChild(span1);
-        down.appendChild(span);
-        li.appendChild(upper);
-        li.appendChild(down);
+    upper.appendChild(span1);
+    down.appendChild(span);
+    li.appendChild(upper);
+    li.appendChild(down);
 
-        ul.appendChild(li);
+    ul.appendChild(li);
 
-        li.addEventListener("click",async function(){
-            await axios.post("http://localhost:5000/messageList", { id: data[i].id,name:data[i].name, pImage:data[i].photo });
-            window.location.href = "/pchat"
+    li.addEventListener("click", async function () {
+      await axios.post("http://localhost:5000/messageList", {
+        id: data[i].id,
+        name: data[i].name,
+        pImage: data[i].photo,
+      });
+      window.location.href = "/pchat";
+    });
+  }
 
-        });
-
-    }
-
-    document.querySelector(".people").remove();
-    document.querySelector(".list").appendChild(ul);
+  document.querySelector(".people").remove();
+  document.querySelector(".list").appendChild(ul);
 }
 
 getList();

@@ -80,6 +80,9 @@ app.use("/", isLoggedIn, homepageRoutes);
 const messageListRoutes = require("./routes/messageListRoutes");
 app.use("/", isLoggedIn, messageListRoutes);
 
+const profileRoutes = require("./routes/profileRoutes");
+app.use("/", isLoggedIn, profileRoutes);
+
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });

@@ -7,6 +7,14 @@ const server = http.createServer(app);
 
 const io = socketIo(server);
 
+io.on('connection', (socket) => {
+  console.log('A user connected');
+
+  socket.on('chat message', (message) => {
+    io.emit('chat message', message);
+  });
+});
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 

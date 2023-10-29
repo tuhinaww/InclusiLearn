@@ -53,7 +53,7 @@ const isLoggedIn = require("./middlewares/isLoggedIn");
 // Navigation
 
 app.get("/", (req, res) => {
-  res.send("welcome");
+  res.redirect("/login");
 });
 
 const loginRoutes = require("./routes/loginRoutes");

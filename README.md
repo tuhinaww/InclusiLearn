@@ -83,7 +83,7 @@ _InclusiLearn is more than just an application; it's a community of support and 
 
 ## Hackathons
 
-|||
-|----|---|
-|<img width="600" alt="Screenshot 2023-12-19 at 12 50 20 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/70d2e1b4-e3cc-4196-affb-372dae425561">|<img width="600" alt="Screenshot 2023-12-19 at 12 50 20 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/fcce2f32-f5e0-4822-a9b5-e15a64239cb8">|
+| Code For Change | North Shore Hacks |
+|----|----|
+|<img width="600" alt="Screenshot 2023-12-19 at 12 50 20 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/70d2e1b4-e3cc-4196-affb-372dae425561">|<img width="616" alt="Screenshot 2023-12-19 at 12 48 58 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/78cd7e8c-b284-4ee9-86ca-3c91d83fe651">|
 

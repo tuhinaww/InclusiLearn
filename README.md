@@ -80,3 +80,10 @@ InclusiLearn is continuously evolving. In the future, we plan to:
 Thank you for joining us on this journey to make education and learning inclusive for all. Together, we can create a world where every student has the opportunity to succeed. Happy coding and connecting!
 
 _InclusiLearn is more than just an application; it's a community of support and empowerment. We believe that inclusivity is the key to a brighter future, and we're excited to have you on board._
+
+## Hackathons
+
+|||
+|----|---|
+|<img width="600" alt="Screenshot 2023-12-19 at 12 50 20 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/70d2e1b4-e3cc-4196-affb-372dae425561">|<img width="600" alt="Screenshot 2023-12-19 at 12 50 20 PM" src="https://github.com/tuhinaww/InclusiLearn/assets/119059108/fcce2f32-f5e0-4822-a9b5-e15a64239cb8">|
+
